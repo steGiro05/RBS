@@ -4,6 +4,7 @@
 - [Concept](#concept)
 - [Structure](#structure)
 - [Run the project](#how-to-install-and-run-the-project)
+- [Future Functionalities](#future-functionalities)
 
 ## Introduction
 
