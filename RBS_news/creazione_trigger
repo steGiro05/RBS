@@ -1,0 +1,24 @@
+--query per controllare che un utente metta un solo like per articolo
+
+DELIMITER //
+
+CREATE TRIGGER before_likes_insert
+BEFORE INSERT ON likes
+FOR EACH ROW
+BEGIN
+    DECLARE existing_rows INT;
+
+    -- Controlla se esiste già una riga con la stessa coppia fkArticle, fkUser
+    SELECT COUNT(*) INTO existing_rows
+    FROM likes
+    WHERE fkArticle = NEW.fkArticle AND fkUser = NEW.fkUser;
+
+    -- Se esiste già una riga, genera un errore
+    IF existing_rows > 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Impossibile inserire il nuovo record. Esiste già una riga con la stessa coppia fkArticle, fkUser';
+    END IF;
+END;
+//
+
+DELIMITER ;
