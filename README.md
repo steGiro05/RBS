@@ -89,4 +89,4 @@ Before running the project, ensure that you have Node.js and Python installed on
 
 ## Future Functionalities
 
-In our future updates, we plan to enhance our sorting algorithm. Our team is actively working on replacing the current sorting algorithm with a Linear Machine Learning Model. For this, we will be utilizing the Python library `sklearn`.
+In our future updates, we plan to enhance our sorting algorithm. We are working on replacing the current sorting algorithm with a Linear Machine Learning Model. For this, we will be utilizing the Python library `sklearn`.
