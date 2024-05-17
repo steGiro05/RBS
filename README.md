@@ -1,4 +1,4 @@
-# RBS
+# RBS News
 
 - [Introduction](#introduction)
 - [Concept](#concept)
