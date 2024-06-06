@@ -1,6 +1,7 @@
 # RBS News
 
 Try it out: https://rbs-news.vercel.app/
+(temporaly unavailable)
 
 - [Introduction](#introduction)
 - [Concept](#concept)
