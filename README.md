@@ -1,7 +1,5 @@
 # RBS News
 
-Try it out: https://rbs-news.vercel.app/
-
 - [Introduction](#introduction)
 - [Concept](#concept)
 - [Structure](#structure)
